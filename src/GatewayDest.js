@@ -26,7 +26,7 @@ export default class GatewayDest extends React.Component {
     children: null
   };
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.gatewayRegistry.addContainer(this.props.name, this);
   }
 
